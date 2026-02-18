@@ -1,0 +1,21 @@
+# macOS / OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log*
+
+# Java / Maven
+backend/target/
+*.class
+
+# Env
+.env
