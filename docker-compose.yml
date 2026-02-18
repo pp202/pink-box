@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: corckboard-postgres
+    environment:
+      POSTGRES_DB: corckboard
+      POSTGRES_USER: corckboard
+      POSTGRES_PASSWORD: corckboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - corckboard-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  corckboard-postgres-data:
